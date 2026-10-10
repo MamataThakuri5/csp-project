@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chemical Use on Fruits & Vegetables · Community Awareness</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f9f6;--card:#fff;--ink:#10261f;--mute:#4a655c;--line:#d5e4dc;--leaf:#1a7f52;--soft:#e0f1e8;--sun:#f2b705;--berry:#a82b55;--berrybg:#fbe7ee;--hero:#10382b;--herotx:#f1faf5;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1a15;--card:#142720;--ink:#e4f2ea;--mute:#9bb9ab;--line:#24402f;--leaf:#4fcf93;--soft:#183829;--berry:#f08aa8;--berrybg:#3a1623;--hero:#0a2a1f}}
+:root[data-theme="dark"]{--bg:#0d1a15;--card:#142720;--ink:#e4f2ea;--mute:#9bb9ab;--line:#24402f;--leaf:#4fcf93;--soft:#183829;--berry:#f08aa8;--berrybg:#3a1623;--hero:#0a2a1f}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(60px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;margin:0;line-height:1.1;letter-spacing:-.015em}
+a{color:var(--leaf)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--hero);display:flex;gap:4px;overflow-x:auto;padding:8px 12px;scrollbar-width:none}
+nav a{color:var(--herotx);text-decoration:none;white-space:nowrap;padding:8px 13px;border-radius:999px;font-size:15px}
+nav a:hover,nav a:focus-visible{background:rgba(255,255,255,.14);outline:none}
+.hero{background:var(--hero);color:var(--herotx);padding:56px 20px 70px}
+.in{max-width:960px;margin:0 auto}
+.hero h1{font-size:clamp(34px,7vw,64px);font-weight:800;max-width:15ch}
+.hero p{max-width:56ch;margin:18px 0 0;font-size:19px;color:#cfe6da}
+.stats{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.stat{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:14px 18px;min-width:150px}
+.stat b{display:block;font:800 34px "Bricolage Grotesque",sans-serif;color:var(--sun)}
+.stat span{font-size:14px;color:#cfe6da}
+section{padding:60px 20px}
+section:nth-of-type(even){background:var(--soft)}
+h2{font-size:clamp(28px,5vw,40px);font-weight:800;margin-bottom:8px}
+.lead{color:var(--mute);max-width:62ch;margin:0 0 26px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px}
+.card h3{font-size:20px;margin-bottom:6px}
+.card p{margin:0;font-size:15.5px;color:var(--mute)}
+.tag{display:inline-block;font-size:13px;font-weight:600;background:var(--soft);color:var(--leaf);border-radius:6px;padding:2px 8px;margin-bottom:8px}
+.warn{background:var(--berrybg);color:var(--berry);border-radius:10px;padding:13px 16px;margin-top:20px;font-size:15.5px}
+.two{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.chip,.m{font:inherit;border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:8px 15px;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--leaf);border-color:var(--leaf);color:#fff}
+.chip:focus-visible,.m:focus-visible,.ck input:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+ol{padding-left:22px;margin:8px 0 0}
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:12px;overflow:hidden;font-size:15.5px}
+th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--hero);color:var(--herotx);font-weight:600}
+.scroll{overflow-x:auto}
+.ck{display:flex;gap:12px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:10px;cursor:pointer}
+.ck input{width:22px;height:22px;margin-top:3px;accent-color:var(--leaf)}
+.prog{height:12px;background:var(--line);border-radius:6px;overflow:hidden;margin:6px 0 18px}
+.prog i{display:block;height:100%;width:0;background:var(--leaf);transition:width .3s}
+.team{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:4px;font-size:15.5px}
+footer{background:var(--hero);color:#cfe6da;padding:36px 20px;font-size:14.5px}
+footer a{color:var(--sun)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.prog i{transition:none}}
+</style>
+</head>
+<body>
+<nav aria-label="Sections">
+<a href="#home">Home</a><a href="#types">Types of chemicals</a><a href="#health">Health effects</a><a href="#identify">Identify & avoid</a><a href="#wash">Safe washing</a><a href="#organic">Organic vs conventional</a><a href="#action">Take action</a><a href="#resources">Resources</a>
+</nav>
+
+<header class="hero" id="home"><div class="in">
+<h1>What is on the fruit you just bought?</h1>
+<p>A community awareness project by IT students at SVCET. Learn which chemicals are used on produce, what they can do, and what you can do at home to reduce exposure.</p>
+<div class="stats">
+<div class="stat"><b>4</b><span>chemical groups explained</span></div>
+<div class="stat"><b>4</b><span>cleaning methods compared</span></div>
+<div class="stat"><b>10–15</b><span>samples per method in our workshop</span></div>
+</div></div></header>
+
+<section id="types"><div class="in">
+<h2>Types of chemicals</h2>
+<p class="lead">Farmers use these to protect crops and raise yield. Each group behaves differently on and around produce.</p>
+<div class="grid">
+<div class="card"><span class="tag">Pests</span><h3>Insecticides</h3><p>Target insects. Toxicity and how long they last vary widely.</p></div>
+<div class="card"><span class="tag">Weeds</span><h3>Herbicides</h3><p>Control weeds. Some leave residues on surfaces or in soil.</p></div>
+<div class="card"><span class="tag">Molds</span><h3>Fungicides</h3><p>Protect against molds and blights. Can be applied close to harvest.</p></div>
+<div class="card"><span class="tag">Nutrients</span><h3>Fertilizers</h3><p>Not pesticides, but they influence uptake and residue behaviour.</p></div>
+</div>
+<div class="warn" style="background:var(--card);color:var(--ink);border:1px solid var(--line)">Regulators set Maximum Residue Limits (MRLs), the highest residue allowed after a risk assessment.</div>
+</div></section>
+
+<section id="health"><div class="in">
+<h2>Health effects</h2>
+<p class="lead">Effects depend on the chemical, the dose, how it enters the body, and how long exposure lasts.</p>
+<div class="two">
+<div class="card"><span class="tag">Short term</span><h3>Acute</h3><p>Headache, nausea, skin irritation, or worse after high-dose incidents. Mostly affects people who apply chemicals, or accidental exposure.</p></div>
+<div class="card"><span class="tag">Long term</span><h3>Chronic</h3><p>Low-level exposure over time is the main consumer concern. Where studied, links include hormone disruption, effects on child development, and higher cancer risk for certain compounds.</p></div>
+</div>
+<div class="warn">Children and pregnant people are more sensitive, so reducing exposure matters most for them.</div>
+</div></section>
+
+<section id="identify"><div class="in">
+<h2>Identify and avoid</h2>
+<p class="lead">You cannot judge residues by looking at produce. These steps help more.</p>
+<div class="grid">
+<div class="card"><h3>Detection is not danger</h3><p>A swab test may show a residue is present. Only the amount compared with the legal limit (MRL) tells you if it is a problem.</p></div>
+<div class="card"><h3>Read labels</h3><p>Look for certified organic marks or post-harvest treatment labels.</p></div>
+<div class="card"><h3>Ask vendors</h3><p>Ask about the waiting period between the last spray and harvest, and how produce was handled.</p></div>
+<div class="card"><h3>Buy in season</h3><p>Local, seasonal produce often needs fewer treatments to store and travel.</p></div>
+</div></div></section>
+
+<section id="wash"><div class="in">
+<h2>Safe washing</h2>
+<p class="lead">Pick your produce. Wash and scrub came out best in our workshop.</p>
+<div class="chips" id="chips" role="group" aria-label="Produce"></div>
+<div class="card" id="out" aria-live="polite"></div>
+<div class="warn" style="background:var(--card);color:var(--ink);border:1px solid var(--line)">Our findings: wash and scrub reduced visible residue most on smooth-skinned produce. Peeling worked but removes nutrients. Vinegar soaking gave only a modest extra benefit. This is a practical activity, not a laboratory analysis.</div>
+</div></section>
+
+<section id="organic"><div class="in">
+<h2>Organic vs conventional</h2>
+<p class="lead">Organic is not residue-free, and conventional is not automatically unsafe. Wash both.</p>
+<div class="scroll"><table>
+<tr><th></th><th>Organic</th><th>Conventional</th></tr>
+<tr><td>Chemicals allowed</td><td>Mostly natural or approved low-impact products</td><td>Wider range of synthetic products within legal limits</td></tr>
+<tr><td>Typical residues</td><td>Usually lower, not zero</td><td>Present at or below MRLs when rules are followed</td></tr>
+<tr><td>Cost and access</td><td>Often higher priced, harder to find</td><td>Affordable and widely available</td></tr>
+<tr><td>What to do</td><td colspan="2">Wash and scrub either type before eating.</td></tr>
+</table></div>
+</div></section>
+
+<section id="action"><div class="in">
+<h2>Take action this week</h2>
+<p class="lead">Tick what you will do. Small habits add up.</p>
+<div class="prog" aria-hidden="true"><i id="bar"></i></div>
+<label class="ck"><input type="checkbox"><span><b>Wash and scrub</b> produce before eating, even if you will peel it.</span></label>
+<label class="ck"><input type="checkbox"><span><b>Choose lower-residue options</b> when possible and store produce properly.</span></label>
+<label class="ck"><input type="checkbox"><span><b>Ask one vendor</b> how their produce was grown and handled.</span></label>
+<label class="ck"><input type="checkbox"><span><b>Share this page</b> or run a mini-workshop for family or neighbours.</span></label>
+<p id="msg" style="font-weight:600"></p>
+</div></section>
+
+<section id="resources"><div class="in">
+<h2>Resources</h2>
+<p class="lead">Check rules and guidance from the agencies that set them.</p>
+<div class="grid">
+<div class="card"><h3><a href="https://www.fssai.gov.in" target="_blank" rel="noopener">FSSAI</a></h3><p>India's food safety regulator, including residue limits.</p></div>
+<div class="card"><h3><a href="https://www.who.int" target="_blank" rel="noopener">WHO</a></h3><p>Global guidance on pesticide residues and food safety.</p></div>
+<div class="card"><h3><a href="https://www.epa.gov" target="_blank" rel="noopener">US EPA</a></h3><p>Pesticide registration and environmental risk information.</p></div>
+</div></div></section>
+
+<footer><div class="in">
+<b>Chemicals on Fruits & Vegetables: A Community Awareness Study</b><br>Department of Information Technology, SVCET
+<ul class="team"><li>Mamata Thakuri · 24781A1287</li><li>Anisha Neupane · 24781A1290</li><li>Yallamraju Jayanthi · 24781A1283</li><li>Yellaturu Akhila · 24781A1284</li></ul>
+</div></footer>
+
+<script>
+const P={tomato:["🍅","Tomato",["Rinse under running water for 30 seconds.","Rub the skin and the stem area by hand or with a soft brush.","Pat dry with a clean cloth."]],
+brinjal:["🍆","Brinjal",["Rinse and rub the skin firmly.","Cut off the cap and stem.","Peel if you prefer, then cook."]],
+greens:["🥬","Leafy greens",["Separate leaves and discard the outer ones.","Rinse several times in fresh water.","Dry in a salad spinner or with a clean cloth."]],
+apple:["🍎","Apple",["Scrub the skin under running water.","Dry with a clean cloth.","Peel only if the skin looks waxy."]],
+cucumber:["🥒","Cucumber",["Scrub the skin under running water.","Trim both ends.","Peel if waxed."]],
+grapes:["🍇","Grapes",["Remove from the stem.","Rinse in a colander, rubbing gently.","Optional: brief diluted vinegar soak, then rinse again."]],
+guava:["🍈","Guava",["Rinse and rub the skin under running water.","Dry with a clean cloth.","Eat with skin if clean, since it holds fibre."]]};
+const chips=document.getElementById("chips"),out=document.getElementById("out");
+function show(k){chips.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed",c.dataset.k===k));
+const[e,n,s]=P[k];out.innerHTML=`<h3>${e} ${n}</h3><ol>${s.map(x=>`<li>${x}</li>`).join("")}</ol>`}
+Object.keys(P).forEach(k=>{const b=document.createElement("button");b.className="chip";b.dataset.k=k;b.textContent=P[k][0]+" "+P[k][1];b.onclick=()=>show(k);chips.appendChild(b)});
+show("tomato");
+const cks=[...document.querySelectorAll(".ck input")],bar=document.getElementById("bar"),msg=document.getElementById("msg");
+cks.forEach(c=>c.onchange=()=>{const n=cks.filter(x=>x.checked).length;bar.style.width=n/cks.length*100+"%";msg.textContent=n===cks.length?"All done. Thank you for making safer choices.":n+" of "+cks.length+" selected"});
+</script>
+</body>
+</html>
